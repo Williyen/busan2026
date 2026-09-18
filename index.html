@@ -5,392 +5,416 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>釜山 · 兩天一夜</title>
 <style>
-:root{
---ink:#eae4d8;
---ink-dim:#a89f8f;
---bg:#14181a;
---bg-panel:#1b2123;
---bg-card:#20272a;
---line:#333c3d;
---cypress:#5c7a6b;
---oak:#a9773f;
---amber:#c99a52;
---moss:#4a5f4e;
---danger:#a85c4f;
-}
-@media (prefers-color-scheme: light){
-:root:not([data-theme="dark"]){
---ink:#1e2422;
---ink-dim:#5c6360;
---bg:#f2efe8;
---bg-panel:#e9e4d8;
---bg-card:#ffffff;
---line:#d8d2c2;
---cypress:#4a6455;
---oak:#8a5f30;
---amber:#a97e3c;
---moss:#3d4f40;
---danger:#8a4438;
-}
-}
-:root[data-theme="dark"]{
---ink:#eae4d8; --ink-dim:#a89f8f; --bg:#14181a; --bg-panel:#1b2123;
---bg-card:#20272a; --line:#333c3d; --cypress:#5c7a6b; --oak:#a9773f;
---amber:#c99a52; --moss:#4a5f4e; --danger:#a85c4f;
-}
+  :root{
+    --ink:#eae4d8;
+    --ink-dim:#a89f8f;
+    --bg:#14181a;
+    --bg-panel:#1b2123;
+    --bg-card:#20272a;
+    --line:#333c3d;
+    --cypress:#5c7a6b;
+    --oak:#a9773f;
+    --amber:#c99a52;
+    --moss:#4a5f4e;
+    --danger:#a85c4f;
+  }
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){
+      --ink:#1e2422;
+      --ink-dim:#5c6360;
+      --bg:#f2efe8;
+      --bg-panel:#e9e4d8;
+      --bg-card:#ffffff;
+      --line:#d8d2c2;
+      --cypress:#4a6455;
+      --oak:#8a5f30;
+      --amber:#a97e3c;
+      --moss:#3d4f40;
+      --danger:#8a4438;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#eae4d8; --ink-dim:#a89f8f; --bg:#14181a; --bg-panel:#1b2123;
+    --bg-card:#20272a; --line:#333c3d; --cypress:#5c7a6b; --oak:#a9773f;
+    --amber:#c99a52; --moss:#4a5f4e; --danger:#a85c4f;
+  }
 
-* { box-sizing: border-box; }
-html,body{ margin:0; padding:0; }
-body{
-background: var(--bg);
-color: var(--ink);
-font-family: "Noto Serif TC","Georgia",serif;
--webkit-font-smoothing: antialiased;
-line-height: 1.6;
-padding-bottom: 60px;
-}
+  * { box-sizing: border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Noto Serif TC","Georgia",serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+    padding-bottom: 60px;
+  }
 
-.wrap{ max-width: 720px; margin: 0 auto; padding: 0 20px; }
+  .wrap{ max-width: 720px; margin: 0 auto; padding: 0 20px; }
 
-header.hero{
-padding: 56px 20px 40px;
-border-bottom: 1px solid var(--line);
-background:
-radial-gradient(ellipse at top left, rgba(92,122,107,0.18), transparent 60%),
-var(--bg);
-}
-.hero-inner{ max-width: 720px; margin: 0 auto; }
-.eyebrow{
-font-family: "Helvetica Neue", Arial, sans-serif;
-font-size: 12px;
-letter-spacing: 0.12em;
-color: var(--cypress);
-margin: 0 0 14px;
-}
-h1{
-font-size: clamp(30px, 7vw, 44px);
-margin: 0 0 12px;
-font-weight: 600;
-letter-spacing: 0.01em;
-}
-.hero-sub{
-color: var(--ink-dim);
-font-size: 15px;
-margin: 0;
-max-width: 46ch;
-}
-.hero-meta{
-display:flex;
-flex-wrap: wrap;
-gap: 10px 24px;
-margin-top: 28px;
-font-family: "Helvetica Neue", Arial, sans-serif;
-}
-.hero-meta div{ font-size: 13px; color: var(--ink-dim); }
-.hero-meta strong{
-display:block;
-color: var(--ink);
-font-family: "Noto Serif TC", serif;
-font-size: 16px;
-margin-top: 2px;
-}
+  header.hero{
+    padding: 56px 20px 40px;
+    border-bottom: 1px solid var(--line);
+    background:
+      radial-gradient(ellipse at top left, rgba(92,122,107,0.18), transparent 60%),
+      var(--bg);
+  }
+  .hero-inner{ max-width: 720px; margin: 0 auto; }
+  .eyebrow{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: var(--cypress);
+    margin: 0 0 14px;
+  }
+  h1{
+    font-size: clamp(30px, 7vw, 44px);
+    margin: 0 0 12px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+  .hero-sub{
+    color: var(--ink-dim);
+    font-size: 15px;
+    margin: 0;
+    max-width: 46ch;
+  }
+  .hero-meta{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    margin-top: 28px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+  .hero-meta div{ font-size: 13px; color: var(--ink-dim); }
+  .hero-meta strong{
+    display:block;
+    color: var(--ink);
+    font-family: "Noto Serif TC", serif;
+    font-size: 16px;
+    margin-top: 2px;
+  }
 
-.day-section{ padding: 48px 20px 8px; }
-.day-head{
-display:flex;
-flex-wrap: wrap;
-align-items: baseline;
-row-gap: 6px;
-column-gap: 12px;
-margin-bottom: 26px;
-border-bottom: 1px solid var(--line);
-padding-bottom: 14px;
-}
-.day-num{
-font-family: "Helvetica Neue", Arial, sans-serif;
-font-size: 11px;
-letter-spacing: 0.08em;
-color: var(--cypress);
-border: 1px solid var(--cypress);
-padding: 3px 8px;
-border-radius: 20px;
-white-space: nowrap;
-flex-shrink: 0;
-}
-.day-head h2{
-margin: 0;
-font-size: clamp(17px, 5.4vw, 22px);
-font-weight: 600;
-white-space: nowrap;
-}
-.day-head span{
-color: var(--ink-dim);
-font-size: 12.5px;
-white-space: nowrap;
-flex-basis: 100%;
-}
-@media (min-width: 400px){
-.day-head span{ flex-basis: auto; }
-}
+  .day-section{ padding: 48px 20px 8px; }
+  .day-head{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    row-gap: 6px;
+    column-gap: 12px;
+    margin-bottom: 26px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 14px;
+  }
+  .day-num{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--cypress);
+    border: 1px solid var(--cypress);
+    padding: 3px 8px;
+    border-radius: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .day-head h2{
+    margin: 0;
+    font-size: clamp(17px, 5.4vw, 22px);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .day-head span{
+    color: var(--ink-dim);
+    font-size: 12.5px;
+    white-space: nowrap;
+    flex-basis: 100%;
+  }
+  @media (min-width: 400px){
+    .day-head span{ flex-basis: auto; }
+  }
 
-.timeline{ position: relative; padding-left: 26px; }
-.timeline::before{
-content:"";
-position: absolute;
-left: 6px; top: 6px; bottom: 6px;
-width: 1px;
-background: linear-gradient(to bottom, var(--cypress), var(--line) 90%);
-}
+  .timeline{ position: relative; padding-left: 26px; }
+  .timeline::before{
+    content:"";
+    position: absolute;
+    left: 6px; top: 6px; bottom: 6px;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--cypress), var(--line) 90%);
+  }
 
-.item{ position: relative; padding-bottom: 26px; }
-.item:last-child{ padding-bottom: 0; }
-.item::before{
-content:"";
-position: absolute;
-left: -26px; top: 5px;
-width: 9px; height: 9px;
-border-radius: 50%;
-background: var(--bg);
-border: 2px solid var(--cypress);
-}
-.item.anchor::before{
-background: var(--amber);
-border-color: var(--amber);
-width: 11px; height: 11px;
-left: -27px;
-}
+  .item{ position: relative; padding-bottom: 26px; }
+  .item:last-child{ padding-bottom: 0; }
+  .item::before{
+    content:"";
+    position: absolute;
+    left: -26px; top: 5px;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 2px solid var(--cypress);
+  }
+  .item.anchor::before{
+    background: var(--amber);
+    border-color: var(--amber);
+    width: 11px; height: 11px;
+    left: -27px;
+  }
 
-.time{
-font-family: "Helvetica Neue", Arial, sans-serif;
-font-size: 12.5px;
-color: var(--amber);
-letter-spacing: 0.03em;
-margin-bottom: 4px;
-}
-.item h3{
-margin: 0 0 4px;
-font-size: 16.5px;
-font-weight: 600;
-}
-.item p{
-margin: 0;
-font-size: 13.5px;
-color: var(--ink-dim);
-max-width: 52ch;
-}
-.tag{
-display:inline-block;
-font-family: "Helvetica Neue", Arial, sans-serif;
-font-size: 10.5px;
-letter-spacing: 0.04em;
-color: var(--cypress);
-border: 1px solid var(--line);
-padding: 1px 8px;
-border-radius: 20px;
-margin-top: 8px;
-}
-.tag.food{ color: var(--oak); }
-.tag.move{ color: var(--ink-dim); }
+  .time{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 12.5px;
+    color: var(--amber);
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+  .item h3{
+    margin: 0 0 4px;
+    font-size: 16.5px;
+    font-weight: 600;
+  }
+  .item p{
+    margin: 0;
+    font-size: 13.5px;
+    color: var(--ink-dim);
+    max-width: 52ch;
+  }
+  .tag{
+    display:inline-block;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 10.5px;
+    letter-spacing: 0.04em;
+    color: var(--cypress);
+    border: 1px solid var(--line);
+    padding: 1px 8px;
+    border-radius: 20px;
+    margin-top: 8px;
+  }
+  .tag.food{ color: var(--oak); }
+  .tag.move{ color: var(--ink-dim); }
 
-footer{
-text-align: center;
-padding: 30px 20px 10px;
-font-size: 12px;
-color: var(--ink-dim);
-font-family: "Helvetica Neue", Arial, sans-serif;
-}
+  .nlink{
+    display: inline-block;
+    margin-top: 8px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    color: var(--amber);
+    text-decoration: none;
+    border-bottom: 1px solid var(--amber);
+    padding-bottom: 1px;
+  }
+  .nlink:hover{ opacity: 0.8; }
 
-@media (max-width: 480px){
-header.hero{ padding: 44px 16px 32px; }
-.day-section{ padding: 40px 16px 8px; }
-}
+  footer{
+    text-align: center;
+    padding: 30px 20px 10px;
+    font-size: 12px;
+    color: var(--ink-dim);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+
+  @media (max-width: 480px){
+    header.hero{ padding: 44px 16px 32px; }
+    .day-section{ padding: 40px 16px 8px; }
+  }
 </style>
 </head>
 <body>
 
 <header class="hero">
-<div class="hero-inner">
-<p class="eyebrow">TAIPEI — BUSAN · 9/19—9/20</p>
-<h1>釜山，兩天一夜</h1>
-<p class="hero-sub">單一動線：海雲台 ⇄ 廣安里。不跑西側景點，全程定點放空。</p>
-<div class="hero-meta">
-<div>去程<strong>TPE 06:15 → PUS</strong></div>
-<div>回程<strong>PUS 22:20 → TPE</strong></div>
-<div>住宿<strong>東橫INN 海雲台2號店</strong></div>
-<div>退房<strong>9/20 12:00（延遲）</strong></div>
-</div>
+  <div class="hero-inner">
+    <p class="eyebrow">TAIPEI — BUSAN · 9/19—9/20</p>
+    <h1>釜山，兩天一夜</h1>
+    <p class="hero-sub">單一動線：海雲台 ⇄ 廣安里。不跑西側景點，全程定點放空。</p>
+    <div class="hero-meta">
+      <div>去程<strong>TPE 06:15 → PUS</strong></div>
+      <div>回程<strong>PUS 22:20 → TPE</strong></div>
+      <div>住宿<strong>東橫INN 海雲台2號店</strong></div>
+      <div>退房<strong>9/20 12:00（延遲）</strong></div>
+    </div>
 
-</div>
+  </div>
 </header>
 
 <div class="wrap">
 
-<section class="day-section">
-<div class="day-head">
-<span class="day-num">DAY 1</span>
-<h2>9月19日 週六</h2>
-<span>落地日 · 廣安里初訪</span>
-</div>
-<div class="timeline">
+  <section class="day-section">
+    <div class="day-head">
+      <span class="day-num">DAY 1</span>
+      <h2>9月19日 週六</h2>
+      <span>落地日 · 廣安里初訪</span>
+    </div>
+    <div class="timeline">
 
-<div class="item anchor">
-<div class="time">06:15 – 07:00</div>
-<h3>落地、通關</h3>
-<p>PUS金海機場，準備轉乘市區。</p>
-<span class="tag move">移動</span>
-</div>
+      <div class="item anchor">
+        <div class="time">06:15 – 07:00</div>
+        <h3>落地、通關</h3>
+        <p>PUS金海機場，準備轉乘市區。</p>
+        <span class="tag move">移動</span>
+      </div>
 
-<div class="item">
-<div class="time">07:00 – 08:00</div>
-<h3>機場輕軌轉地鐵，直達海雲台</h3>
-<p>無需繞路，飯店與後續行程都在這一側。</p>
-<span class="tag move">移動</span>
-</div>
+      <div class="item">
+        <div class="time">07:00 – 08:00</div>
+        <h3>機場輕軌轉地鐵，直達海雲台</h3>
+        <p>無需繞路，飯店與後續行程都在這一側。</p>
+        <span class="tag move">移動</span>
+      </div>
 
-<div class="item anchor">
-<div class="time">08:00 – 08:30</div>
-<h3>飯店寄放行李／Check-in</h3>
-<p>東橫INN海雲台2號店，若房間未整理好先寄放即可。</p>
-</div>
+      <div class="item anchor">
+        <div class="time">08:00 – 08:30</div>
+        <h3>飯店寄放行李／Check-in</h3>
+        <p>東橫INN海雲台2號店，若房間未整理好先寄放即可。</p>
+      </div>
 
-<div class="item">
-<div class="time">08:30 – 09:30</div>
-<h3>移動至廣安里</h3>
-<p>今日主場，接下來都在此區活動。</p>
-<span class="tag move">移動</span>
-</div>
+      <div class="item">
+        <div class="time">08:30 – 09:30</div>
+        <h3>移動至廣安里</h3>
+        <p>今日主場，接下來都在此區活動。</p>
+        <span class="tag move">移動</span>
+      </div>
 
-<div class="item">
-<div class="time">09:30 – 11:00</div>
-<h3>Working Holiday Brunch Cafe</h3>
-<p>落地後第一餐，3樓面海全景窗正對廣安大橋。</p>
-<span class="tag food">早午餐</span>
-</div>
+      <div class="item">
+        <div class="time">09:30 – 11:00</div>
+        <h3>Esso</h3>
+        <p>窗邊吧台座位，正對廣安里沙灘，單人早餐不突兀，對外國旅客友善。</p>
+        <span class="tag food">早午餐</span>
+        <div><a class="nlink" href="https://map.naver.com/p/search/Esso%20%EA%B4%91%EC%95%88%EB%A6%AC" target="_blank" rel="noopener">Naver 地圖 ↗</a></div>
+      </div>
 
-<div class="item">
-<div class="time">11:00 – 13:00</div>
-<h3>廣安里海邊走走</h3>
-<p>沙灘散步、拍照，不趕行程。</p>
-</div>
+      <div class="item">
+        <div class="time">11:00 – 13:00</div>
+        <h3>廣安里海邊走走</h3>
+        <p>沙灘散步、拍照，不趕行程。</p>
+      </div>
 
-<div class="item">
-<div class="time">13:00 – 15:00</div>
-<h3>午餐</h3>
-<p>廣安里周邊海鮮或小吃。</p>
-<span class="tag food">午餐</span>
-</div>
+      <div class="item">
+        <div class="time">13:00 – 15:00</div>
+        <h3>午餐</h3>
+        <p>廣安里周邊海鮮或小吃。</p>
+        <span class="tag food">午餐</span>
+      </div>
 
-<div class="item">
-<div class="time">15:00 – 16:30</div>
-<h3>Cafe Haute</h3>
-<p>戶外露台正對沙灘與大橋，下午曬太陽看海。</p>
-</div>
+      <div class="item">
+        <div class="time">15:00 – 16:30</div>
+        <h3>Casa Busano 광안점</h3>
+        <p>安靜氛圍，配Bossa Nova音樂，面海座位少而放空，適合單人久坐。</p>
+        <div><a class="nlink" href="https://map.naver.com/p/search/%EC%B9%B4%EC%82%AC%EB%B6%80%EC%82%AC%EB%85%B8%20%EA%B4%91%EC%95%88%EC%A0%90" target="_blank" rel="noopener">Naver 地圖 ↗</a></div>
+      </div>
 
-<div class="item">
-<div class="time">16:30 – 18:30</div>
-<h3>晚餐（廣安里）</h3>
-<p>就近解決，不回海雲台，省去一趟來回。</p>
-<span class="tag food">晚餐</span>
-</div>
+      <div class="item">
+        <div class="time">16:30 – 18:30</div>
+        <h3>晚餐（廣安里）</h3>
+        <p>就近解決，不回海雲台，省去一趟來回。</p>
+        <span class="tag food">晚餐</span>
+      </div>
 
-<div class="item">
-<div class="time">18:30 – 20:00</div>
-<h3>廣安里閒晃</h3>
-<p>等天黑，準備看橋夜景。</p>
-</div>
+      <div class="item">
+        <div class="time">18:30 – 20:00</div>
+        <h3>廣安里閒晃</h3>
+        <p>等天黑，準備看橋夜景。</p>
+      </div>
 
-<div class="item anchor">
-<div class="time">20:00 – 22:00</div>
-<h3>FUNNY BEER</h3>
-<p>露天座位正對大橋夜景，配炸雞小酌。</p>
-<span class="tag">夜景</span>
-</div>
+      <div class="item anchor">
+        <div class="time">20:00 – 22:00</div>
+        <h3>로카벨 혼술바 광안리（Rocabel）</h3>
+        <p>店名即「혼술」（一人飲酒吧），評論明確寫獨自前來也自在，海景吧檯座。</p>
+        <span class="tag">夜景</span>
+        <div><a class="nlink" href="https://map.naver.com/p/search/%EB%A1%9C%EC%B9%B4%EB%B2%A8%20%ED%98%BC%EC%88%A0%EB%B0%94%20%EA%B4%91%EC%95%88%EB%A6%AC" target="_blank" rel="noopener">Naver 地圖 ↗</a></div>
+      </div>
 
-<div class="item">
-<div class="time">22:00 – 23:00</div>
-<h3>移動回海雲台，過夜</h3>
-<p>今晚唯一一趟回程，不再折返。</p>
-<span class="tag move">移動</span>
-</div>
+      <div class="item">
+        <div class="time">22:00 – 23:00</div>
+        <h3>移動回海雲台，過夜</h3>
+        <p>今晚唯一一趟回程，不再折返。</p>
+        <span class="tag move">移動</span>
+      </div>
 
-</div>
-</section>
+    </div>
+  </section>
 
-<section class="day-section">
-<div class="day-head">
-<span class="day-num">DAY 2</span>
-<h2>9月20日 週日</h2>
-<span>收尾日 · 傍晚返程</span>
-</div>
-<div class="timeline">
+  <section class="day-section">
+    <div class="day-head">
+      <span class="day-num">DAY 2</span>
+      <h2>9月20日 週日</h2>
+      <span>收尾日 · 傍晚返程</span>
+    </div>
+    <div class="timeline">
 
-<div class="item anchor">
-<div class="time">08:00 – 09:30</div>
-<h3>飯店早餐</h3>
-<p>東橫INN附早餐。</p>
-<span class="tag food">早餐</span>
-</div>
+      <div class="item anchor">
+        <div class="time">08:00 – 09:30</div>
+        <h3>飯店早餐</h3>
+        <p>東橫INN附早餐。</p>
+        <span class="tag food">早餐</span>
+      </div>
 
-<div class="item anchor">
-<div class="time">09:30 – 10:00</div>
-<h3>正式退房，行李寄放櫃檯</h3>
-<p>不超過12:00延遲退房上限，多數飯店退房後仍可免費寄放行李。</p>
-</div>
+      <div class="item anchor">
+        <div class="time">09:30 – 10:00</div>
+        <h3>正式退房，行李寄放櫃檯</h3>
+        <p>不超過12:00延遲退房上限，多數飯店退房後仍可免費寄放行李。</p>
+      </div>
 
-<div class="item">
-<div class="time">10:00 – 11:00</div>
-<h3>移動至廣安里</h3>
-<span class="tag move">移動</span>
-</div>
+      <div class="item">
+        <div class="time">10:00 – 10:40</div>
+        <h3>미포（美浦）順路走走 · TIDE Coffee Roasters</h3>
+        <p>飯店就在海雲台，退房後往廣安里前先順路繞一下海邊咖啡街。</p>
+        <div><a class="nlink" href="https://map.naver.com/p/search/TIDE%20Coffee%20Roasters%20%ED%95%B4%EC%9A%B4%EB%8C%80" target="_blank" rel="noopener">Naver 地圖 ↗</a></div>
+      </div>
 
-<div class="item">
-<div class="time">11:00 – 13:00</div>
-<h3>Cup &amp; Cup</h3>
-<p>換個角度看白天海景，人潮較少、風大但安靜。</p>
-</div>
+      <div class="item">
+        <div class="time">10:40 – 11:40</div>
+        <h3>移動至廣安里</h3>
+        <span class="tag move">移動</span>
+      </div>
 
-<div class="item">
-<div class="time">13:00 – 14:30</div>
-<h3>午餐</h3>
-<span class="tag food">午餐</span>
-</div>
+      <div class="item">
+        <div class="time">11:40 – 13:00</div>
+        <h3>Byul Bed</h3>
+        <p>入場含各式零食飲料，可躺臥休息，評論直接寫適合單人放空。</p>
+        <div><a class="nlink" href="https://map.naver.com/p/search/%EB%B3%84%EB%B2%A0%EB%93%9C%20%EA%B4%91%EC%95%88%EB%A6%AC" target="_blank" rel="noopener">Naver 地圖 ↗</a></div>
+      </div>
 
-<div class="item">
-<div class="time">14:30 – 15:30</div>
-<h3>移動回海雲台</h3>
-<span class="tag move">移動</span>
-</div>
+      <div class="item">
+        <div class="time">13:00 – 14:30</div>
+        <h3>午餐</h3>
+        <span class="tag food">午餐</span>
+      </div>
 
-<div class="item">
-<div class="time">15:30 – 17:30</div>
-<h3>Bronx Brewing Co.</h3>
-<p>精釀啤酒配披薩，看橋收尾，氣氛比夜間酒吧安靜。</p>
-</div>
+      <div class="item">
+        <div class="time">14:30 – 16:30</div>
+        <h3>카페인차저</h3>
+        <p>空間小、半戶外，人潮少，同樣在廣安里，不需要先跑一趟海雲台。</p>
+        <div><a class="nlink" href="https://map.naver.com/p/search/%EC%B9%B4%ED%8E%98%EC%9D%B8%EC%B0%A8%EC%A0%80%20%EA%B4%91%EC%95%88%EB%A6%AC" target="_blank" rel="noopener">Naver 地圖 ↗</a></div>
+      </div>
 
-<div class="item anchor">
-<div class="time">17:30 – 18:00</div>
-<h3>回飯店領回行李</h3>
-<p>上午已退房，這裡只是取件，不涉及時限。</p>
-</div>
+      <div class="item">
+        <div class="time">16:30 – 17:30</div>
+        <h3>移動回海雲台</h3>
+        <span class="tag move">移動</span>
+      </div>
 
-<div class="item">
-<div class="time">18:00 – 19:30</div>
-<h3>移動至機場</h3>
-<span class="tag move">移動</span>
-</div>
+      <div class="item anchor">
+        <div class="time">17:30 – 18:00</div>
+        <h3>回飯店領回行李</h3>
+        <p>上午已退房，這裡只是取件，不涉及時限。</p>
+      </div>
 
-<div class="item">
-<div class="time">19:30 – 20:30</div>
-<h3>辦登機、通關</h3>
-</div>
+      <div class="item">
+        <div class="time">18:00 – 19:30</div>
+        <h3>移動至機場</h3>
+        <span class="tag move">移動</span>
+      </div>
 
-<div class="item anchor">
-<div class="time">22:20</div>
-<h3>起飛，PUS → TPE</h3>
-</div>
+      <div class="item">
+        <div class="time">19:30 – 20:30</div>
+        <h3>辦登機、通關</h3>
+      </div>
 
-</div>
-</section>
+      <div class="item anchor">
+        <div class="time">22:20</div>
+        <h3>起飛，PUS → TPE</h3>
+      </div>
+
+    </div>
+  </section>
 
 </div>
 
